@@ -7,7 +7,34 @@
 */
 
 // Start Coding Here
+function add(num1, num2) {
+    return num1 + num2;
+};
 
+function subtract(num1, num2) {
+    return num1 - num2;
+};
+
+function multiply(num1, num2) {
+    return num1 * num2;
+};
+
+function divide(num1, num2) {
+    if (num2 === 0) {
+        return "Cannot divide by zero"
+    }
+    return num1 / num2;
+};
+
+// ternary
+// function divide(num1, num2) {
+//     return num2 === 0 ? "Cannot divide by zero" : num1 / num2
+// }
+
+// Higher order function
+function calculate(num1, num2, callback) {
+    return callback(num1, num2);
+};
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(calculate(10, 5, add)); // 15

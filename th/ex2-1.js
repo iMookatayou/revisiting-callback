@@ -8,7 +8,13 @@
 */
 
 // Start Coding Here
+const postCreated = () => `📝 แจ้งเตือน: โพสต์ของคุณถูกสร้างสำเร็จ!`;
+const postLiked = () => `👍 แจ้งเตือน: มีคนมากดไลค์โพสต์ของคุณ!`;
+const postCommented = () => `💬 แจ้งเตือน: มีคนมาคอมเมนต์ในโพสต์ของคุณ!`;
+const postShared = () => `🔄 แจ้งเตือน: มีคนแชร์โพสต์ของคุณ!`;
 
+// Higher order function 
+const sendNotification = (notification) => notification();
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(sendNotification(postCreated));   // 📝 แจ้งเตือน: โพสต์ของคุณถูกสร้างสำเร็จ!
